@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        @font-face {
+            font-family: cartisBeautiful;
+            src: url(typography/Cartis\ Beautyful\ serif.ttf);
+        }
+
+        p {
+            font-family: cartisBeautiful;
+        }
+
+        .lorem-ipsum {
+            /* font-weight: bold; */
+            font-weight: 600;
+            text-transform: capitalize;
+            text-decoration: underline;
+        }
+
+        .lorem-ipsum .header {
+            text-decoration: line-through;
+            font-style: oblique;
+        }
+
+        .text-shadow {
+            text-shadow: 2px 2px 7px #FF0000;
+        }
+
+        /* .css-units .unit-px {
+            font-size: 10px;
+        }  */
+
+        .css-units {
+            font-size: 10px;
+        }
+
+        .css-units .unit-em {
+            font-size: 2em;
+        }
+
+        /* .css-units .unit-rem {
+            font-size: 2rem;
+        } */
+
+        .align-center {
+            text-align: center;
+        }
+
+        .align-left {
+            text-align: left;
+        }
+
+        .align-right {
+            text-align: right;
+        }
+
+        .align-justify {
+            text-align: justify;
+        }
+
+        .overflow-default {
+            width: 300px;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .overflow-ellipsis {
+            width: 300px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .color {
+            /* color: red; */
+            /* color: #ff00aa; */
+            color: rgb(100, 0, 255);
+            background-color: gray;
+            opacity: 0.5;
+        }
+
+        .background-image {
+            height: 750px;
+            background-image: url("images/background.jpg");
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: cover;
+        }
+
+        .linear-gradient {
+            height: 500px;
+            background-image: linear-gradient(to right, red, pink);
+        }
+
+        .multiple-backgrounds {
+            height: 1000px;
+            background-image: url("images/animals.png"), url("images/background.jpg");
+            background-size: 500px, 800px;
+            background-repeat: no-repeat;
+            background-size: cover, cover;
+        }
+
+        .display-inline {
+            display: inline;
+        }
+
+        .display-none {
+            display: none;
+        }
+
+        .visibility-none {
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Text properties</h1>
+    <p class="lorem-ipsum"><span class="header">Lorem ipsum dolor</span> sit amet, consectetur adipisicing elit. Et
+        dolorem debitis ad adipisci fugit nisi? Soluta sapiente, eveniet ea facilis, aspernatur cupiditate quis ipsam
+        nihil maiores optio quisquam hic laboriosam.</p>
+    <p class="text-shadow">This is a text with shadow</p>
+    <div class="css-units">
+        <div>
+            <p class="unit-em">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, magnam!</p>
+            <p class="unit-em">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, magnam!</p>
+        </div>
+    </div>
+    <div class="align-center">
+        <p>Align center</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis enim ipsa quam laboriosam nesciunt necessitatibus, qui sit maxime quos ipsum! Dolore excepturi iusto minus tempora tempore temporibus dolorum debitis doloremque voluptates explicabo qui sint soluta similique nam amet, blanditiis placeat voluptate. Debitis mollitia aspernatur quos tempore, illo animi veritatis magni?</p>
+    </div>
+    <div class="align-left">
+        <p>Align left</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis enim ipsa quam laboriosam nesciunt necessitatibus, qui sit maxime quos ipsum! Dolore excepturi iusto minus tempora tempore temporibus dolorum debitis doloremque voluptates explicabo qui sint soluta similique nam amet, blanditiis placeat voluptate. Debitis mollitia aspernatur quos tempore, illo animi veritatis magni?</p>
+    </div>
+    <div class="align-right">
+        <p>Align right</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis enim ipsa quam laboriosam nesciunt necessitatibus, qui sit maxime quos ipsum! Dolore excepturi iusto minus tempora tempore temporibus dolorum debitis doloremque voluptates explicabo qui sint soluta similique nam amet, blanditiis placeat voluptate. Debitis mollitia aspernatur quos tempore, illo animi veritatis magni?</p>
+    </div>
+    <div class="align-justify">
+        <p>Align justify</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis enim ipsa quam laboriosam nesciunt necessitatibus, qui sit maxime quos ipsum! Dolore excepturi iusto minus tempora tempore temporibus dolorum debitis doloremque voluptates explicabo qui sint soluta similique nam amet, blanditiis placeat voluptate. Debitis mollitia aspernatur quos tempore, illo animi veritatis magni?</p>
+    </div>
+    <p class="overflow-default">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta accusamus adipisci quisquam odit tempora deleniti culpa dolores rerum. Vero dolorum tenetur molestias soluta quos deleniti reiciendis! Et tempore saepe harum, vero, quos explicabo a cum libero id nihil inventore ullam. Perspiciatis, animi delectus! Quidem dicta voluptatem neque ducimus voluptatibus, ut nihil quaerat, ipsa, reprehenderit aspernatur explicabo saepe. Placeat quisquam at praesentium deleniti sequi cum asperiores nostrum laborum sunt. Ut, distinctio. Dolorem ut eaque dolores officiis quos. Cupiditate atque quos, animi optio dolorum voluptas doloribus perferendis minus? Veniam quasi delectus consequatur, sint at vitae, cupiditate, accusantium dolores nulla molestias quod praesentium!
+    </p>
+    <p class="overflow-ellipsis">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta accusamus adipisci quisquam odit tempora deleniti culpa dolores rerum. Vero dolorum tenetur molestias soluta quos deleniti reiciendis! Et tempore saepe harum, vero, quos explicabo a cum libero id nihil inventore ullam. Perspiciatis, animi delectus! Quidem dicta voluptatem neque ducimus voluptatibus, ut nihil quaerat, ipsa, reprehenderit aspernatur explicabo saepe. Placeat quisquam at praesentium deleniti sequi cum asperiores nostrum laborum sunt. Ut, distinctio. Dolorem ut eaque dolores officiis quos. Cupiditate atque quos, animi optio dolorum voluptas doloribus perferendis minus? Veniam quasi delectus consequatur, sint at vitae, cupiditate, accusantium dolores nulla molestias quod praesentium!
+    </p>
+    <h1>Colors and Background</h1>
+    <div class="color">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, laborum voluptatem sed culpa quos tempore maiores tempora repudiandae expedita alias!</p>
+    </div>
+    <div class="background-image"></div>
+    <div class="linear-gradient"></div>
+    <div class="multiple-backgrounds"></div>
+    <h1>Display and visibility</h1>
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat facilis ratione nostrum explicabo ipsa eius reiciendis eligendi quibusdam ab cupiditate consequuntur numquam odit laudantium dolor sapiente culpa, quis, ea nobis repellendus quam dicta earum! Aliquid eum, expedita hic dolore sed recusandae perspiciatis, numquam odit minima saepe sapiente sequi distinctio enim!
+        <p class="display-inline">Some other text inside</p>
+    </div>
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat facilis ratione nostrum explicabo ipsa eius reiciendis eligendi quibusdam ab cupiditate consequuntur numquam odit laudantium dolor sapiente culpa, quis, ea nobis repellendus quam dicta earum! Aliquid eum, expedita hic dolore sed recusandae perspiciatis, numquam odit minima saepe sapiente sequi distinctio enim!
+        <p class="visibility-none">Some other text inside</p>
+        <p class="display-inline">The second paragraph</p>
+    </div>
+</body>
+
+</html>
