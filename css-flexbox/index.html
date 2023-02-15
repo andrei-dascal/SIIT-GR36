@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        :root {
+           --margin-md: 12px; 
+           --margin-lg: 24px; 
+
+           --main-bg-color: blue;
+           --secondary-bg-color: red;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-end;
+            /* height: 200px; */
+            background-color: cornflowerblue;
+        }
+
+        .flex-container .flex-item {
+            background-color: aliceblue;
+            padding: 24px;
+            margin: var(--margin-md);
+        }
+
+        .flex-container .item-2 {
+            /* order: -1; */
+            flex-grow: 2;
+        }
+
+        .flex-container-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: cornflowerblue;
+            height: 300px;
+            margin-top: var(--margin-md);
+        }
+
+        .flex-container-center .flex-item-center {
+            width: 100px;
+            height: 100px;
+            background-color: aliceblue;
+        }
+
+        .card-container {
+            display: flex;
+            margin-top: var(--margin-md);
+            background-color: cornflowerblue;
+        }
+
+        .card-container .card {
+            flex-grow: 1;
+            background-color: aliceblue;
+            padding: 48px 24px;
+            margin: var(--margin-lg);
+        }
+
+        .card-container .card .card-details {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item item-2">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+
+    <div class="flex-container-center">
+        <div class="flex-item-center"></div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <h2>Card name</h2>
+            <div class="card-details">
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+            </div>
+        </div>
+        <div class="card">
+            Card 2
+        </div>
+        <div class="card">
+            Card 3
+        </div>
+    </div>
+</body>
+
+</html>
