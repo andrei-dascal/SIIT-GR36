@@ -20,11 +20,19 @@
             height: 40px;
         }
 
+        .header .nav-container {
+            display: flex;
+            flex-basis: 100%;
+            justify-content: space-between;
+        }
+
         .header .nav-item {
             text-decoration: none;
             color: white;
             margin-left: 10px;
         }
+
+        /* margin-left: auto */
     </style>
 </head>
 
@@ -32,7 +40,7 @@
     <header class="header">
         <!-- <div class="navigation"> -->
         <img class="logo" src="images/logo.png">
-        <div>
+        <div class="nav-container">
             <div>
                 <a class="nav-item" href="#home">Home</a>
                 <a class="nav-item" href="#news">News</a>
