@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .header {
+                grid-area: header;
+            }
+
+            .aside-info {
+                grid-area: aside-info;
+            }
+
+            .main-info {
+                grid-area: main-info;
+            }
+
+            .right-info {
+                grid-area: right-info;
+            }
+
+            .footer {
+                grid-area: footer;
+            }
+
+            .grid-container {
+                display: grid;
+                grid-template-areas: 
+                'header header header header header header'
+                'aside-info main-info main-info main-info right-info right-info'
+                'aside-info main-info main-info main-info right-info right-info'
+                '. main-info main-info main-info right-info right-info'
+                'footer footer footer footer footer footer';
+                gap: 12px;
+                background-color: blue;
+                padding: 8px;
+            }
+
+            .grid-container div {
+                background-color: cadetblue;
+                padding: 20px;
+                text-align: center;
+                font-size: 24px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="header">
+                <!-- Menu -->
+                <!-- Banner -->
+                Header
+            </div>
+            <div class="aside-info">Aside info</div>
+            <div class="main-info">Main info</div>
+            <div class="right-info">Extra info</div>
+            <div class="footer">Footer</div>
+        </div>
+    </body>
+</html>
