@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        :root {
+            --mobile-treshold: 768px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            background-color: gray;
+            padding: 12px 20px;
+        }
+
+        .header .logo {
+            height: 40px;
+        }
+
+        .header .nav-container {
+            display: flex;
+            flex-basis: 100%;
+            justify-content: space-between;
+        }
+
+        .header .nav-item {
+            text-decoration: none;
+            color: white;
+            margin-left: 10px;
+        }
+
+        .header .nav-container-mobile {
+            display: none;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .header {
+                justify-content: space-between;
+            }
+            
+            .header .nav-container {
+                display: none;
+            }
+
+            .header .nav-container-mobile {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <img class="logo" src="../css-flexbox/images/logo.png">
+        <div class="nav-container">
+            <div>
+                <a class="nav-item" href="#home">Home</a>
+                <a class="nav-item" href="#news">News</a>
+                <a class="nav-item" href="#contact">Contact</a>
+                <a class="nav-item" href="#about">About</a>
+            </div>
+            <a class="nav-item" href="#personal">Personal details</a>
+        </div>
+        <div class="nav-container-mobile">
+            <a class="fa fa-bars"></a>
+        </div>
+    </header>
+</body>
+
+</html>

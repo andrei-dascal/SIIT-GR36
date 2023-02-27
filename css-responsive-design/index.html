@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            /* Examples of paddings tresholds */
+            /* --padding-xs: 4px;
+            --padding-sm: 8px;
+            --padding-lg: 12px;
+            --padding-xl: 16px;
+            --padding-xxl: 16px; */
+
+
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /* Extra small devices (phones, 600px and down) */
+        .title {
+            color: red;
+            font-size: 40px;
+            margin-bottom: 24px;
+        }
+
+        .paragraph {
+            color: blue;
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {
+            .title {
+                color: green;
+                /* font-size: 40px;
+                margin-bottom: 24px; */
+            }
+
+            .paragraph {
+                color: yellow;
+            }
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        /* @media only screen and (min-width: 768px) and (max-width: 991px) { --Example using define interval: min and max width */ 
+        @media only screen and (min-width: 768px) {
+            .title {
+                color: black;
+                /* font-size: 40px;
+                margin-bottom: 24px; */
+            }
+
+            .paragraph {
+                /* color: yellow; */
+                display: none;
+            }
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            .title {
+                color: red;
+                /* font-size: 40px;
+                margin-bottom: 24px; */
+            }
+
+            .paragraph {
+                color: red;
+                display: block;
+            }
+        }
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {
+            .title {
+                color: green;
+                /* font-size: 40px;
+                margin-bottom: 24px; */
+            }
+
+            .paragraph {
+                color: green;
+            }
+        }
+
+        @media print {
+            .title {
+                font-size: 60px;
+                color: black;
+            }
+
+            .paragraph {
+                font-size: 36px;
+                color: yellow;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="title">Title</h1>
+    <p class="paragraph">Paragraph</p>
+</body>
