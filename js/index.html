@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="index.js"></script>
+    <script>
+        console.log("Inside head");
+    </script>
+</head>
+
+<body>
+    <script>
+        console.log("-----Variables and objects-----");
+
+        //This is a comment;
+
+        console.log(`It's all right. Javascript is "not" that scary`);
+
+        console.log("Inside body");
+
+        var firstName = "Andrei";
+        console.log("First name is: ", firstName)
+
+        var personAge = 33;
+        var personAgeString = "33";
+        var hasDriveLicense = true;
+        var undefinedVariable;
+
+        //New age is VARSTA for NUMELE;
+        var text1 = "New age is " + personAge + " for " + firstName;
+        var text2 = `New age is ${personAge} for ${firstName}`;
+        console.log(text1);
+        console.log(text2);
+
+        console.log("New age is: ", personAge + 1);
+        console.log("New age is: ", personAgeString + 1);
+
+        console.log(typeof personAge);
+        console.log(typeof personAgeString);
+        console.log(typeof undefinedVariable);
+
+        console.log("Are equal? == ", personAge == personAgeString);
+        console.log("Are equal? === ", personAge === personAgeString);
+
+        var newPersonAge = personAge + 1;
+
+        var isEligibleForDrivingLicense = personAge > 18;
+
+        var openParanthesize1 = !(personAge > 18 && firstName == "Andrei");
+        var openParanthesize2 = !(personAge > 18) || !(firstName == "Andrei");
+        var openParanthesize3 = personAge <= 18 || firstName != "Andrei";
+
+        console.log(openParanthesize1, openParanthesize2, openParanthesize3);
+
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+        console.log(fruits[0]);
+        console.log(fruits[1]);
+        console.log(fruits[fruits.length - 1]);
+        console.log(fruits[3]);
+
+        console.log(fruits.toString());
+        console.log(fruits.join(" si "));
+
+        console.log(fruits.pop());
+        console.log(fruits);
+
+        console.log(fruits.push("Mango"));
+        console.log(fruits);
+
+        console.log(fruits.slice(2));
+
+        var person1 = {
+            firstName: "John",
+            age: 19
+        };
+
+        var person2 = {
+            firstName: "Christine",
+            age: 45
+        };
+
+        var person3 = {
+            firstName: "Max",
+            age: 22
+        };
+
+        console.log(person1.firstName);
+        console.log(person1.age);
+
+        // Control structures
+        console.log("-----Control structures-----")
+
+        if (personAge >= 18) {
+            console.log("You are an adult");
+        } else {
+            console.log("You are not an adult");
+        }
+
+        console.log("Outside if");
+
+        var domainQuiz = "Math";
+
+        switch (domainQuiz) {
+            case "History":
+                console.log("History");
+                break;
+            case "Geography":
+                console.log("Geography");
+                break;
+            case "Math":
+                console.log("Math");
+                break;
+            default:
+                //Or throw an exception; depends on the business case
+                throw new Error("Not known domain");
+                // console.log("Sport");
+                break;
+        }
+
+        var whileIndex = 0;
+
+        while (whileIndex < 10) {
+            console.log(whileIndex);
+            whileIndex = whileIndex + 2;
+        }
+
+        console.log("---While---");
+
+        var whileBoolean = true;
+        whileIndex = 0;
+        while (whileBoolean) {
+            console.log(whileIndex);
+
+            //Have a breaking condition; to change the boolean variable to false
+            if (whileIndex == 7) {
+                whileBoolean = false;
+            }
+
+            whileIndex++;
+        }
+
+        console.log("---Do While---");
+
+        whileIndex = 0;
+        whileBoolean = true;
+
+        do {
+            console.log(whileIndex);
+
+            //Have a breaking condition; to change the boolean variable to false
+            if (whileIndex == 7) {
+                whileBoolean = false;
+            }
+
+            whileIndex++;
+        } while (whileBoolean)
+
+        console.log("---For---");
+
+        for(var forIndex = 0; forIndex < 5; forIndex++) {
+            console.log(forIndex);
+        }
+    </script>
+</body>
+
+</html>
