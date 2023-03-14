@@ -1,0 +1,124 @@
+<html>
+
+<head></head>
+
+<body>
+    <script>
+        //Global scope
+        var numberArray = [5, 15, 1, 3, 4, 75, 25, 6, 7, 11, 6, 2, 15, -1, 90, 76, 76];
+        var numberArray2 = [100, 10, 23, -5, -10, 34];
+        var numberArray3 = [0];
+
+        //Problem7: Find min/max din array
+
+        // var result = [];
+        //Solution3 - using an object; same principle as for array;
+        var minMaxNumber = {
+            min: 0,
+            max: 0
+        }
+
+        function calculateMinMax(numberArrayParam) {
+            //Local scope
+            var minNumber = numberArrayParam[0];
+            var maxNumber = numberArrayParam[0];
+
+            for (var index = 1; index < numberArrayParam.length; index++) {
+                if (minNumber > numberArrayParam[index])
+                    minNumber = numberArrayParam[index];
+
+                if (maxNumber < numberArrayParam[index])
+                    maxNumber = numberArrayParam[index];
+            }
+
+            // result.push(minNumber);
+            // result.push(maxNumber);
+
+            minMaxNumber.min = minNumber;
+            minMaxNumber.max = maxNumber;
+
+            // return minNumber + ' ' + maxNumber;
+
+            // console.log(minNumber);
+            // console.log(maxNumber);
+        }
+
+        function calculateMinNumber(numberArrayParam) {
+            var minNumber = numberArrayParam[0];
+
+            for (var index = 1; index < numberArrayParam.length; index++) {
+                if (minNumber > numberArrayParam[index])
+                    minNumber = numberArrayParam[index];
+            }
+
+            return minNumber;
+        }
+
+        function calculateMaxNumber(numberArrayParam) {
+            var maxNumber = numberArrayParam[0];
+
+            for (var index = 1; index < numberArrayParam.length; index++) {
+                if (maxNumber < numberArrayParam[index])
+                    maxNumber = numberArrayParam[index];
+            }
+
+            return maxNumber;
+        }
+
+        //console.log(minNumber);
+
+        //Solution1 - not that good, working on strings can be expensive
+        // var result = calculateMinMax(numberArray);
+        // var minNumber = result.split(" ")[0];
+        // var maxNumber = result.split(" ")[1];
+
+        //Solution2
+        // calculateMinMax(numberArray);
+        // var minNumber = result[0];
+        // var maxNumber = result[1];
+
+        //Solution3
+        // calculateMinMax(numberArray, true);
+        // var minNumber = minMaxNumber.min;
+        // var maxNumber = minMaxNumber.max;
+
+        // console.log(minNumber);
+        // console.log(maxNumber);
+
+        // console.log("---");
+        // calculateMinMax(numberArray2);
+        // console.log(minNumber);
+
+        // function factorial(number) {
+        //     if (number === 0 || number === 1) {
+        //         return 1;
+        //     }
+
+        //     return number * factorial(number - 1);
+        // }
+
+        // console.log("---");
+        // console.log(factorial(3));
+        // console.log(factorial(10));
+
+        // //Without params
+        // (function() {
+        //     console.log(Math.PI);
+        // })();
+
+        // //With params
+        // (function(name) {
+        //     console.log(name);
+        // })("Andrei");
+
+        // setTimeout(function() {
+        //     console.log("Inside timeout");
+        // }, 5000);
+
+        // setInterval(function(){
+        //     console.log("Inside interval")
+        // }, 1000);
+    </script>
+</body>
+
+</html>
